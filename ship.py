@@ -8,7 +8,7 @@ class Ship():
         self.ai_settings = ai_settings
 
         self.image = pygame.image.load('images/ship.png')
-        self.image =  pygame.transform.scale(self.image, (50, 50))
+        self.image = pygame.transform.scale(self.image, (50, 50))
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
@@ -25,7 +25,6 @@ class Ship():
 
     def blitme(self):
 
-        self.image =  pygame.transform.scale(self.image, (50, 50))
         self.screen.blit(self.image, self.rect)
 
     def update(self):
