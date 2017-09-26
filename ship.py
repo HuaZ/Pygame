@@ -10,7 +10,7 @@ class Ship():
         self.image = pygame.image.load('images/ship.png')
         self.image = pygame.transform.scale(self.image, (50, 50))
         self.rect = self.image.get_rect()
-        self.screen_rect = screen.get_rect()
+        self.screen_rect = self.screen.get_rect()
 
 
         self.rect.centerx = self.screen_rect.centerx
